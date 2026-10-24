@@ -1,0 +1,16 @@
+# Target & Build
+target/
+dist/
+node_modules/
+
+# IDE & Editor
+.idea/
+.vscode/
+*.iml
+.DS_Store
+*.log
+
+# Environment variables
+.env
+.env.local
+application-local.properties
