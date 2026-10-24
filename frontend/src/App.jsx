@@ -5,10 +5,11 @@ import ExamCreation from "./pages/ExamCreation";
 import Grading from "./pages/Grading";
 import ExamLookup from "./pages/ExamLookup";
 import AnnualReport from "./pages/AnnualReport";
+import AdminManagement from "./pages/AdminManagement";
 
 export default function App() {
   const [currentUser, setCurrentUser] = useState({
-    fullName: "Lê Đông Dương (Demo)",
+    fullName: "Lê Đông Dương (QA/Tester)",
     role: "LECTURER"
   });
   const [activeTab, setActiveTab] = useState("question-bank");
@@ -19,7 +20,7 @@ export default function App() {
       <header style={{ backgroundColor: "#003366", color: "#fff", padding: "14px 28px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div>
           <h2 style={{ margin: 0, fontSize: 20 }}>HỆ THỐNG QUẢN LÝ VIỆC RA ĐỀ & CHẤM THI CỦA GIẢNG VIÊN</h2>
-          <small style={{ color: "#b0c4de" }}>Nhóm 3 - N2T2 | Môn: Công nghệ phần mềm (Lab 07)</small>
+          <small style={{ color: "#b0c4de" }}>Nhóm 3 - N2T2 | Môn: Công nghệ phần mềm (Lab 06 & Lab 07)</small>
         </div>
         <div>
           {currentUser ? (
@@ -73,6 +74,12 @@ export default function App() {
         >
           MH06: Báo cáo năm
         </button>
+        <button
+          onClick={() => setActiveTab("admin-management")}
+          style={{ padding: "8px 14px", cursor: "pointer", fontWeight: activeTab === "admin-management" ? "bold" : "normal" }}
+        >
+          MH07: Quản trị môn & Phân công
+        </button>
       </nav>
 
       {/* Main Content Area */}
@@ -83,6 +90,7 @@ export default function App() {
         {activeTab === "grading" && <Grading />}
         {activeTab === "exam-lookup" && <ExamLookup />}
         {activeTab === "annual-report" && <AnnualReport />}
+        {activeTab === "admin-management" && <AdminManagement />}
       </main>
     </div>
   );
