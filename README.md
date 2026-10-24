@@ -9,7 +9,7 @@
 
 | STT | Họ và tên | MSSV | Vai trò dự án | Email TDTU | Nhánh Git Flow phụ trách |
 |:---:|---|:---:|---|---|---|
-| 1 | **Bùi Đức Huy** | 52400196 | Nhóm trưởng / BA | `52400196@student.tdtu.edu.vn` | `feature/report-admin` |
+| 1 | **Bùi Đức Huy** | 52400196 | Nhóm trưởng / BA | `xbac7300@gmail.com` | `feature/report-admin` |
 | 2 | **Ngô Hoàng Khải** | 52400050 | Phân tích hệ thống (SA) | `52400050@student.tdtu.edu.vn` | `feature/question-bank` |
 | 3 | **Nguyễn Phú Long** | 52400213 | Thiết kế UI/UX | `52400213@student.tdtu.edu.vn` | `feature/exam-lookup-ui` |
 | 4 | **Lê Đông Dương** | 52400045 | Quản lý chất lượng (QA/Tester) | `52400045@student.tdtu.edu.vn` | `feature/exam-grading` |
